@@ -17,7 +17,7 @@ namespace StartFinance.Models
 
         [NotNull]
         public string Location { get; set; }
-
+                            
         [NotNull]
         public string StartDate { get; set; }
 
