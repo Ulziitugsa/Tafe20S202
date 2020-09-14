@@ -86,6 +86,18 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
+            <!--  ContactDetails button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ContactDetails" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                		Symbol="ContactInfo" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Contact Details" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
             <!--  Accounts button  -->
             <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:AccountsPage" 
                                           AutomationProperties.Name="Jerry"
@@ -98,7 +110,6 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-
             <!--  Wish List button  -->
             <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:WishListPage" 
                                           AutomationProperties.Name="Jerry"
@@ -108,6 +119,19 @@
                 		Symbol="Bullets" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="WishList" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+
+            <!--  Appointments button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:AppointmentsPage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                		Symbol="Account" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Appointments" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
         </Controls:HamburgerMenu.PrimaryButtons>
