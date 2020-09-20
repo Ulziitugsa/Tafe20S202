@@ -131,9 +131,17 @@ namespace StartFinance.Views
                 // checks if data is null else inserts
                 try
                 {
-                    int ContactID = ((Contacts)ContactListView.SelectedItem).ContactID;
-                    var qu = conn.Query<Contacts>("DELETE FROM Contacts WHERE ContactID='" + ContactID + "'");
-                    Results();
+                    if ((Contacts)ContactListView.SelectedItem == null)
+                    {
+                        MessageDialog ClearDialog = new MessageDialog("Please select the item to Delete", "Oops..!");
+                        await ClearDialog.ShowAsync();
+                    }
+                    else
+                    {
+                        int ContactID = ((Contacts)ContactListView.SelectedItem).ContactID;
+                        var qu = conn.Query<Contacts>("DELETE FROM Contacts WHERE ContactID='" + ContactID + "'");
+                        Results();
+                    }
 
                 }
                 catch (NullReferenceException)
